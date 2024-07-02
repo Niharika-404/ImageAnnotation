@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  padding: 40px;
+}
+.image-container{
+  min-height: 200px;
+  max-height: fit-content;
+  margin-bottom: 20px;
+  padding: 40px;
+}
+.upload{
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(18, 103, 222);
+}
+.button-container{
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+}
+ button{
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.clear-btn{
+  background-color: rgb(166, 54, 54);
+
+}
+.select-btn{
+  background-color: rgb(5, 90, 7);
+}
+.annotate-btn{
+  background-color: rgb(41, 72, 136);
+
+}
+.clear-btn:hover{
+  background-color: rgb(191, 28, 28);
+}
+.annotate-btn:hover{
+  background-color: rgb(28, 77, 176);
+}
+.select-btn:hover, .save-btn:hover{
+  background-color: rgb(3, 71, 4);
+}
+.annotation-form{
+  margin-top: 30px;
+ 
+}
+label, input{
+  margin-right: 10px;
+}
+input{
+  padding: 10px;
+}
+button:disabled {
+  color: #424141; /* Change text color */
+  background-color: #f0f0f0; /* Change background color */
+  /* You can add more styles as needed */
+  cursor: not-allowed
+}
+button:disabled:hover{
+  background-color: #f0f0f0;
+  color: #424141;
+}
+.checkbox-container{
+  margin-top: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.save-btn{
+  margin-top: 20px;
+  background-color: rgb(4, 105, 4);
 }
+.prev-nxt-btns{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.prev-btn, .next-btn, .json, .csv{
+  background-color: black;
+  color: white
+}
+.prev-btn:hover, .next-btn:hover, .json:hover, .csv:hover{
+  background-color: gray;
+  color: black;
+}
+
+.download-btns{
+  display: flex;
+  gap: 20px;
+}
+
